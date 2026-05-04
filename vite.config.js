@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/avalon-crm/',
-}) 
+  base: process.env.VERCEL ? '/' : '/avalon-crm/',
+})
